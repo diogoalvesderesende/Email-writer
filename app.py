@@ -9,6 +9,14 @@ st.title("Promotional Email Writer")
 # Input field for the email topic
 topic = st.text_input("Enter the topic of the email:")
 
+# Define the system and user message
+system_prompt = """You are a skilled social media manager specialized in Analytics and AI.
+                  Your main task is to write engaging, concise, and persuasive emails for subscribers"""
+
+topic = "New GenAI course section: Fine Tuning an GPT model"
+
+user_prompt = f"Write an email about: {topic}"
+
 # Generate email button
 if st.button("Generate Email"):
     if topic:
