@@ -37,7 +37,7 @@ if st.button("Generate Email"):
             #max_tokens=700
         )
             # Extract the generated email from the response
-            generated_email = response['choices'][0]['message'].content
+            generated_email = response.choices[0].message.content
             st.subheader("Generated Email:")
             st.write(generated_email)
         except Exception as e:
