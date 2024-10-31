@@ -6,8 +6,8 @@ MODEL = "ft:gpt-4o-2024-08-06:diogo-resende:email-writer-data-heroes:ALBNWysv"
 # Streamlit app
 st.title("Promotional Email Writer")
 
-# Input field for the email topic
-topic = st.text_input("Enter the topic of the email:")
+# Input field for the email topic (now using st.text_area)
+topic = st.text_area("Enter the topic of the email:", height=200)
 
 # Define the system and user message
 system_prompt = """You are a skilled social media manager specialized in Analytics and AI.
